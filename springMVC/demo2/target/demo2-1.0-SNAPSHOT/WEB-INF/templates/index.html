@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- 测试RequestMapping的属性值 -->
+    <a href="/demo2/testReqMap/test">测试map</a><br/>
+    <a th:href="@{/testReqMap/value1}">测试value1</a><br/>
+    <a th:href="@{/testReqMap/value1}">测试value2</a><br/>
+
+    <form th:action="@{/testReqMap/value2}" method="post">
+        <input type="submit" value="测试method"/>
+    </form>
+
+    <a th:href="@{/testReqMap/testParam(username='root', password=123456)}">测试param</a><br/>
+
+    <a th:href="@{/testReqMap/testHeader(username, password=123456)}">测试header</a>
+
+    <a th:href="@{/testReqMap/1test}">测试Ant占位符</a>
+
+    <a th:href="@{/testReqMap/testRest/1/root}">测试Rest路径中的占位符</a>
+    <br/><br/>
+
+    <!--  测试获取参数  -->
+    <a th:href="@{/testAPI(username='root', password=123456)}">测试Servlet原始获取参数方式</a><br/>
+    <a th:href="@{/testParam(username='root', password=123456)}">通过控制器形参名称获取参数</a>
+
+    <form th:action="@{/testMore}" method="get">
+        用户名：<input type="text" name="username" /><br/>
+        密码：<input type="text" name="password" /><br/>
+        性别：<input type="radio" name="gender" value="male"/>男
+             <input type="radio" name="gender" value="female"/>女<br/>
+        爱好：<br/>
+        <input type="checkbox" name="hobby" value="music"> 音乐<br/>
+        <input type="checkbox" name="hobby" value="sport"> 体育<br/>
+        <input type="checkbox" name="hobby" value="painting"> 绘画<br/>
+        <input type="checkbox" name="hobby" value="carve"> 雕塑<br/>
+        <button type="submit">提交</button>
+    </form><br/>
+
+    <form th:action="@{/testBean}" method="post">
+        姓名：<input type="text" name="name" />
+        性别：<input type="text" name="gender" />
+        个性签名：<input type="text" name="profile" />
+        <button type="submit">提交User</button>
+    </form>
+</body>
+</html>

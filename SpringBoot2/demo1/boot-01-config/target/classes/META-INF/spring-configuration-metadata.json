@@ -1,0 +1,77 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "org.dry.bean.Person",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "pet",
+      "type": "org.dry.bean.Pet",
+      "sourceType": "org.dry.bean.Pet"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.all-pets",
+      "type": "java.util.Map<java.lang.String,java.util.List<org.dry.bean.Pet>>",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.animal",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.interests",
+      "type": "java.lang.String[]",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.pet",
+      "type": "org.dry.bean.Pet",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.salarys",
+      "type": "java.util.Set<java.lang.Double>",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.score",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "person.user-name",
+      "type": "java.lang.String",
+      "sourceType": "org.dry.bean.Person"
+    },
+    {
+      "name": "pet.name",
+      "type": "java.lang.String",
+      "sourceType": "org.dry.bean.Pet"
+    },
+    {
+      "name": "pet.weight",
+      "type": "java.lang.Double",
+      "sourceType": "org.dry.bean.Pet"
+    }
+  ],
+  "hints": []
+}

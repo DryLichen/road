@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;AccountTest.java&apos; to &apos;AdvancedSE/src/thread.exce&apos;&#x0D;&#x0A;- Original project: &apos;JavaSenior&apos;&#x0D;&#x0A;- Destination element: &apos;AdvancedSE/src/thread.exce&apos;&#x0D;&#x0A;- Original element: &apos;AccountTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=AdvancedSE/src&lt;thread.exce" element1="day02/src/com/atguigu/exer/AccountTest.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1637327927123" units="0" version="1.0"/>
+</session>

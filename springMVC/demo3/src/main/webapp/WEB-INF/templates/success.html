@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <p>成功!!!</p>
+    </div><br/>
+
+    <p th:text="${testReqDomain}">此处获取request域指定名称值</p>
+    <p th:text="${session.testSessionDomain}">此处获取session域指定名称值</p>
+    <p th:text="${application.testAppDomain}">此处获取application域指定名称值</p>
+
+</body>
+</html>

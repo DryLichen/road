@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.DynamicMapper">
+	
+	<!-- Employee getIfEmp(Employee employee) -->
+	<select id="getIfEmp" resultType="Employee">
+		select * from t_emp where 1 = 1
+		<if test="empName != null and empName != ''">
+			and emp_name = #{empName}
+		</if>
+		<if test="age != null and age != ''">
+			and age = #{age}
+		</if>
+		<if test="gender != null and gender != ''">
+			and gender = #{gender}
+		</if>
+		<if test="email != null and email != ''">
+			and email = #{email}
+		</if>
+	</select>
+	
+	
+	<!-- Employee getWhereEmp(Employee employee) -->
+	<select id="getWhereEmp" resultType="Employee">
+		select * from t_emp
+		<where>
+			<if test="empName != null and empName != ''">
+				emp_name = #{empName}
+			</if>
+			<if test="age != null and age != ''">
+				and age = #{age}
+			</if>
+			<if test="gender != null and gender != ''">
+				and gender = #{gender}
+			</if>
+			<if test="email != null and email != ''">
+				and email = #{email}
+			</if>
+		</where>
+	</select>
+	
+	
+	<!-- Employee getChooseEmp(Employee employee) -->
+	<select id="getChooseEmp" resultType="Employee">
+		select * from t_emp
+		<where>
+			<choose>
+				<when test="empName != null and empName != ''">
+					empName = #{empName}
+				</when>
+				<when test="age != '' and age != null">
+					age = #{age}
+				</when>
+				<when test="gender != '' and gender != null">
+					gender = #{gender}
+				</when>
+				<otherwise>
+					eid = 1
+				</otherwise>
+			</choose>
+		</where>
+	</select>
+	
+	
+	<!-- int insertEmps(@Param("emps") List<Employee> employees) -->
+	<insert id="insertEmps">
+		insert into t_emp values
+		<foreach collection="emps" item="emp" separator=",">
+			(null, #{emp.empName}, #{emp.age}, #{emp.gender}, #{emp.email}, null)
+		</foreach>
+	</insert>
+	
+	<!-- int deleteEmps(@Param("eids") int[] eids) -->
+	<delete id="deleteEmps">
+		delete from t_emp where
+		<foreach collection="eids" item="eid" separator="or">
+			eid = #{eid}
+		</foreach>
+	</delete>
+</mapper>

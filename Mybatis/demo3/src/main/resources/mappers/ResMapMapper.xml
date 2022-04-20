@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.ResMapMapper">
+	
+	<!-- Employee getEmp() -->
+	<select id="getEmp" resultType="Employee">
+		select * from t_emp where eid = #{eid}
+	</select>
+	
+	<!-- Employee getEmpAndDeptName(@Param("eid") Integer eid) -->
+	<resultMap id="empANDdeptname1" type="Employee">
+		<id property="eid" column="eid"></id>
+		<result property="empName" column="emp_name"></result>
+		<result property="age" column="age"></result>
+		<result property="email" column="email"></result>
+		<result property="gender" column="gender"></result>
+		<result property="dept.did" column="did"></result>
+		<result property="dept.deptName" column="dept_name"></result>
+	</resultMap>
+	<select id="getEmpAndDeptName1" resultMap="empANDdeptname1">
+		select * from t_emp emp left join t_dept dept
+		on emp.did = dept.did
+		where emp.eid = #{eid}
+	</select>
+	
+	<!-- Employee getEmpAndDeptName2(@Param("eid") Integer eid) -->
+	<resultMap id="empAnddeptName2" type="Employee">
+		<id property="eid" column="eid"></id>
+		<result property="empName" column="emp_name"></result>
+		<result property="age" column="age"></result>
+		<result property="email" column="email"></result>
+		<result property="gender" column="gender"></result>
+		<association property="dept" javaType="Department">
+			<id property="did" column="did"></id>
+			<result property="deptName" column="dept_name"></result>
+		</association>
+	</resultMap>
+	<select id="getEmpAndDeptName2" resultMap="empAnddeptName2">
+		select * from t_emp left join t_dept
+		on t_emp.did = t_dept.did
+		where t_emp.eid = #{eid}
+	</select>
+	
+	<!-- Employee getEmpByStep(@Param("eid") Integer eid) -->
+	<resultMap id="empStep" type="Employee">
+		<id property="eid" column="eid"></id>
+		<result property="empName" column="emp_name"></result>
+		<result property="age" column="age"></result>
+		<result property="email" column="email"></result>
+		<result property="gender" column="gender"></result>
+		<association property="dept" select="mappers.ResMapMapper.getDeptByDid" column="did">
+		</association>
+	</resultMap>
+	<select id="getEmpByStep" resultMap="empStep">
+		select * from t_emp where eid = #{eid}
+	</select>
+	
+	<!-- Department getDeptByDid(@Param("did") Integer did) -->
+	<select id="getDeptByDid" resultType="Department">
+		select * from t_dept where did = #{did}
+	</select>
+	
+	
+	
+	<!-- ********************************************************************************* -->
+	
+	<!-- Department getDept(@Param("did") Integer did) -->
+	<resultMap id="dept" type="Department">
+		<id property="did" column="did"></id>
+		<result property="deptName" column="dept_name"></result>
+		<collection property="empList" ofType="Employee">
+			<id property="eid" column="eid"></id>
+			<result property="empName" column="emp_name"></result>
+			<result property="age" column="age"></result>
+			<result property="email" column="email"></result>
+			<result property="gender" column="gender"></result>
+		</collection>
+	</resultMap>
+	<select id="getDept" resultMap="dept">
+		select * from t_dept left join t_emp
+		on t_dept.did = t_emp.did
+		where t_dept.did = #{did}
+	</select>
+	
+	<!-- Department getDeptByStep(@Param("did") Integer did) -->
+	<resultMap id="deptAndEmp" type="Department">
+		<id property="did" column="did"></id>
+		<result property="deptName" column="dept_name"></result>
+		<collection property="empList" select="mappers.ResMapMapper.getEmpByDid" column="did"></collection>
+	</resultMap>
+	<select id="getDeptByStep" resultMap="deptAndEmp">
+		select * from t_dept where did = #{did}
+	</select>
+	
+	<!-- Employee getEmpByDid(@Param("did") Integer did) -->
+	<select id="getEmpByDid" resultType="Employee">
+		select * from t_emp where did = #{did}
+	</select>
+</mapper>

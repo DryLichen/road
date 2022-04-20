@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>thTest</title>
+    <link rel="stylesheet" type="text/css" href="css/thTest.css">
+</head>
+<body>
+    <div id="div_container">
+        <div id="div_table_fruit">
+            <p class="center f30">水果商品管理系统</p>
+            <table id="table_fruit">
+                <tr>
+                    <th class="w20">名称</th>
+                    <th class="w20">单价</th>
+                    <th class="w20">库存</th>
+                    <th>操作</th>
+                </tr>
+                <tr th:if="${#lists.isEmpty(session.fruitList)}">
+                    <td colspan="4" >对不起，库存为空</td>
+                </tr>
+                <tr th:unless="${#lists.isEmpty(session.fruitList)}" th:each="fruit : ${session.fruitList}">
+                    <td th:text="${fruit.fname}">红富士</td>
+                    <td th:text="${fruit.price}">5</td>
+                    <td th:text="${fruit.fcount}">16</td>
+                    <td><img src="imgs/del.jpg" class="delImg"/></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
