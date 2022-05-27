@@ -8,7 +8,7 @@
 	<!-- id标识vue作用的范围，绑定的数据必须写在这个div内部 -->
 	<div id="app">
 		<!-- 插值表达式，声明式渲染，绑定vue中的 data 数据 -->
-		{{ message}}
+		{{ message }}
 	</div>
 
 	<script src="vue.js"></script>
@@ -18,8 +18,15 @@
 		 new Vue({
 			 el: '#app', // 选择vue的 作用范围
 			 data: {
-                 // 在 data 中注册数据，用于
+                 // 在 data 中注册数据，用于视图中的数据绑定
+				 message: 'Hello Vue!'
 			 }
+             // 或者写成完整的函数
+             // data(){
+             //     return {
+             //         message: 'Hello World'
+             //     }
+             // }
 		 })
 		
 	</script>

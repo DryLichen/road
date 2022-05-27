@@ -1,0 +1,28 @@
+2022-05-19 16:23:53 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.sms.ServiceSmsApplication Starting ServiceSmsApplication using Java 17 on DESKTOP-FR5VP0H with PID 12724 (D:\java\code\p2p\srb\service-sms\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
+2022-05-19 16:23:53 [DEBUG] main StartupInfoLogger.java:56 com.dry.srb.sms.ServiceSmsApplication Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-05-19 16:23:53 [INFO ] main SpringApplication.java:641 com.dry.srb.sms.ServiceSmsApplication The following profiles are active: dev
+2022-05-19 16:23:58 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.sms.ServiceSmsApplication Started ServiceSmsApplication in 6.279 seconds (JVM running for 8.347)
+2022-05-19 16:24:25 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] ---> GET http://service-core/api/core/userInfo/checkMobile/18000000000 HTTP/1.1
+2022-05-19 16:24:25 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] ---> END HTTP (0-byte body)
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] <--- HTTP/1.1 200 (1813ms)
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] connection: keep-alive
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] content-type: application/json
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] date: Thu, 19 May 2022 08:24:27 GMT
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] keep-alive: timeout=60
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] transfer-encoding: chunked
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] 
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] false
+2022-05-19 16:24:27 [DEBUG] http-nio-8120-exec-1 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] <--- END HTTP (5-byte body)
+2022-05-19 16:24:27 [INFO ] http-nio-8120-exec-1 ApiSmsController.java:47 com.dry.srb.sms.controller.api.ApiSmsController 手机号注册检查result: false
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] ---> GET http://service-core/api/core/userInfo/checkMobile/17398765432 HTTP/1.1
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] ---> END HTTP (0-byte body)
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] <--- HTTP/1.1 200 (34ms)
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] connection: keep-alive
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] content-type: application/json
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] date: Thu, 19 May 2022 08:29:04 GMT
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] keep-alive: timeout=60
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] transfer-encoding: chunked
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] 
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] false
+2022-05-19 16:29:04 [DEBUG] http-nio-8120-exec-3 Slf4jLogger.java:72 com.dry.srb.sms.client.CoreUserInfoClient [CoreUserInfoClient#checkMobile] <--- END HTTP (5-byte body)
+2022-05-19 16:29:04 [INFO ] http-nio-8120-exec-3 ApiSmsController.java:47 com.dry.srb.sms.controller.api.ApiSmsController 手机号注册检查result: false

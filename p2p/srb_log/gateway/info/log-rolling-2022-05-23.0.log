@@ -1,0 +1,3 @@
+2022-05-23 10:44:40 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.gateway.ServiceGatewayApplication Starting ServiceGatewayApplication using Java 17 on DESKTOP-FR5VP0H with PID 6500 (D:\java\code\p2p\srb\service-gateway\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
+2022-05-23 10:44:40 [INFO ] main SpringApplication.java:641 com.dry.srb.gateway.ServiceGatewayApplication The following profiles are active: dev
+2022-05-23 10:44:48 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.gateway.ServiceGatewayApplication Started ServiceGatewayApplication in 10.794 seconds (JVM running for 14.167)

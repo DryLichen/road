@@ -1,0 +1,84 @@
+2022-05-25 00:00:48 [INFO ] http-nio-8110-exec-4 RequestHelper.java:42 com.dry.srb.core.hfb.RequestHelper 加密前：INVEST20220525000048901|999888|LEND20220520143440915|小额贷|18eb381cfa8b4866bdece487abcd7a14|null|http://localhost/api/core/lendItem/notify|50000.00|http://localhost:3000/user|1653408048229|20000|d6f2883e37ad45d2865f93965f72e4ee|0|0|9876543210
+2022-05-25 00:00:48 [INFO ] http-nio-8110-exec-4 RequestHelper.java:45 com.dry.srb.core.hfb.RequestHelper 加密后：1e6ebbe0cb08fee12a433ddb8be29364
+2022-05-25 00:00:53 [INFO ] http-nio-8110-exec-5 RequestHelper.java:42 com.dry.srb.core.hfb.RequestHelper 加密前：INVEST20220525000048901|LEND20220520143440915|0|0001|充值成功|1653408052997|20000|d6f2883e37ad45d2865f93965f72e4ee|0||0|9876543210
+2022-05-25 00:00:53 [INFO ] http-nio-8110-exec-5 RequestHelper.java:45 com.dry.srb.core.hfb.RequestHelper 加密后：373a480971eb3bc4a63dcf863e579717
+2022-05-25 00:00:53 [INFO ] http-nio-8110-exec-5 LendItemServiceImpl.java:179 com.dry.srb.core.service.impl.LendItemServiceImpl 用户投资异步回调成功：{"voteBindCode":"d6f2883e37ad45d2865f93965f72e4ee","agentProjectCode":"LEND20220520143440915","voteAmt":"20000","projectType":"0","resultCode":"0001","voteNote":"","voteFeeAmt":"0","votePrizeAmt":"0","agentBillNo":"INVEST20220525000048901","resultMsg":"充值成功","timestamp":"1653408052997"}
+2022-05-25 00:01:06 [INFO ] http-nio-8110-exec-8 RequestHelper.java:42 com.dry.srb.core.hfb.RequestHelper 加密前：LOAN20220525000106596|999888|LEND20220520143440915|499.9980000000|null|1653408066391|9876543210
+2022-05-25 00:01:06 [INFO ] http-nio-8110-exec-8 RequestHelper.java:45 com.dry.srb.core.hfb.RequestHelper 加密后：cd8b382fffda58f444de14a55be37841
+2022-05-25 00:01:06 [INFO ] http-nio-8110-exec-8 RequestHelper.java:100 com.dry.srb.core.hfb.RequestHelper --> 发送请求到汇付宝：post data note=null&agentId=999888&agentProjectCode=LEND20220520143440915&mchFee=499.9980000000&sign=cd8b382fffda58f444de14a55be37841&agentBillNo=LOAN20220525000106596&timestamp=1653408066391&
+2022-05-25 00:01:06 [INFO ] http-nio-8110-exec-8 RequestHelper.java:104 com.dry.srb.core.hfb.RequestHelper --> 汇付宝应答结果：result data {"agentProjectCode":"LEND20220520143440915","voteAmt":"49500.0020000000","hyFee":"0","mchFee":"499.9980000000","resultCode":"0000","resultMsg":"放款成功","agentBillNo":"LOAN20220525000106596"}
+2022-05-25 15:48:11 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 17 on DESKTOP-FR5VP0H with PID 2792 (D:\java\code\p2p\srb\service-core\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
+2022-05-25 15:48:11 [INFO ] main SpringApplication.java:641 com.dry.srb.core.ServiceCoreApplication The following profiles are active: dev
+2022-05-25 15:48:20 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 10.891 seconds (JVM running for 13.391)
+2022-05-25 16:34:41 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 17 on DESKTOP-FR5VP0H with PID 2380 (D:\java\code\p2p\srb\service-core\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
+2022-05-25 16:34:41 [INFO ] main SpringApplication.java:641 com.dry.srb.core.ServiceCoreApplication The following profiles are active: dev
+2022-05-25 16:34:49 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 8.744 seconds (JVM running for 10.491)
+2022-05-25 16:42:25 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 17 on DESKTOP-FR5VP0H with PID 5680 (D:\java\code\p2p\srb\service-core\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
+2022-05-25 16:42:25 [INFO ] main SpringApplication.java:641 com.dry.srb.core.ServiceCoreApplication The following profiles are active: dev
+2022-05-25 16:42:41 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 18.189 seconds (JVM running for 21.511)
+2022-05-25 18:01:32 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 17 on DESKTOP-FR5VP0H with PID 19404 (D:\java\code\p2p\srb\service-core\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
+2022-05-25 18:01:32 [INFO ] main SpringApplication.java:641 com.dry.srb.core.ServiceCoreApplication The following profiles are active: dev
+2022-05-25 18:01:54 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 23.101 seconds (JVM running for 27.261)
+2022-05-25 18:04:17 [INFO ] http-nio-8110-exec-6 RequestHelper.java:42 com.dry.srb.core.hfb.RequestHelper 加密前：WITHDRAW20220525180417071|999888|18eb381cfa8b4866bdece487abcd7a14|0|20000|http://localhost/api/core/userAccount/notifyWithdraw|http://localhost:3000/user|1653473057753|9876543210
+2022-05-25 18:04:17 [INFO ] http-nio-8110-exec-6 RequestHelper.java:45 com.dry.srb.core.hfb.RequestHelper 加密后：ea1d971daf4dc37dc84f358b7042d53a
+2022-05-25 18:04:51 [INFO ] http-nio-8110-exec-7 RequestHelper.java:42 com.dry.srb.core.hfb.RequestHelper 加密前：WITHDRAW20220525180417071|18eb381cfa8b4866bdece487abcd7a14|20000|0|0001|充值成功|1653473090377|9876543210
+2022-05-25 18:04:51 [INFO ] http-nio-8110-exec-7 RequestHelper.java:45 com.dry.srb.core.hfb.RequestHelper 加密后：63f3a393fbb4de6d988363140de17ee4
+2022-05-25 18:04:51 [INFO ] http-nio-8110-exec-7 UserAccountServiceImpl.java:182 com.dry.srb.core.service.impl.UserAccountServiceImpl 用户提现异步回调成功：{"mchFee":"0","resultCode":"0001","fetchAmt":"20000","bindCode":"18eb381cfa8b4866bdece487abcd7a14","agentBillNo":"WITHDRAW20220525180417071","resultMsg":"充值成功","timestamp":"1653473090377"}
+2022-05-25 21:56:45 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.core.ServiceCoreApplication Starting ServiceCoreApplication using Java 17 on DESKTOP-FR5VP0H with PID 16840 (D:\java\code\p2p\srb\service-core\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
+2022-05-25 21:56:45 [INFO ] main SpringApplication.java:641 com.dry.srb.core.ServiceCoreApplication The following profiles are active: dev
+2022-05-25 21:56:53 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.core.ServiceCoreApplication Started ServiceCoreApplication in 9.306 seconds (JVM running for 11.153)
+2022-05-25 21:57:42 [ERROR] http-nio-8110-exec-1 UnifiedExceptionHandler.java:46 com.dry.common.exception.UnifiedExceptionHandler 未登录
+com.dry.common.exception.BusinessException: 未登录
+	at com.dry.srb.base.util.JwtUtils.getClaims(JwtUtils.java:79)
+	at com.dry.srb.base.util.JwtUtils.getUserId(JwtUtils.java:57)
+	at com.dry.srb.core.controller.api.UserInfoController.getUserIndex(UserInfoController.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)

@@ -12,8 +12,7 @@
 			baseURL: 'http://localhost:8080',
 			timeout: 1000,
 			headers: {'token': 'Hello123456'}
-			}
-		)
+        })
 		
 		// 2.请求拦截器
 		request.interceptors.request.use(
@@ -41,7 +40,7 @@
 			}
 		)
 		
-		// 4. 操作一个 promise 对象
+		// 4. axios基于promise，所以相当于操作一个 promise 对象
 		request({
 			method: 'get',
 			url: '/user/list'
