@@ -1,3 +1,0 @@
-2022-05-19 16:23:19 [INFO ] main StartupInfoLogger.java:55 com.dry.srb.oss.ServiceOssApplication Starting ServiceOssApplication using Java 17 on DESKTOP-FR5VP0H with PID 7100 (D:\java\code\p2p\srb\service-oss\target\classes started by Sarah Cheung in D:\java\code\p2p\srb)
-2022-05-19 16:23:19 [INFO ] main SpringApplication.java:641 com.dry.srb.oss.ServiceOssApplication The following profiles are active: dev
-2022-05-19 16:23:27 [INFO ] main StartupInfoLogger.java:61 com.dry.srb.oss.ServiceOssApplication Started ServiceOssApplication in 8.365 seconds (JVM running for 12.476)
